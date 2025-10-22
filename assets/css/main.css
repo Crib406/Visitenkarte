@@ -2245,7 +2245,7 @@ input, select, textarea {
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/first_page.jpg");
+		background: url("images/overlay.png"), url("../../images/ich.JPG");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2255,7 +2255,7 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/ich.JPG");
+		background: url("images/overlay.png"), url("../../images/one.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2264,7 +2264,7 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/arbeit.jpeg");
+		background: url("images/overlay.png"), url("../../images/two.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2272,14 +2272,14 @@ input, select, textarea {
 /* New */
 
 	#new {
-		background: url("images/overlay.png"), url("../../images/arbeit.jpeg");
+		background: url("images/overlay.png"), url("../../images/one.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 /* Three (Hintergrundbild wie bei #one/#two) */
 	#three {
-		background: url("images/overlay.png"), url("../../images/weg.jpeg");
+		background: url("images/overlay.png"), url("../../images/two.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2406,6 +2406,62 @@ ul li {
   }
 }
 
+/* EIN Bild nur im Hero */
+#intro {
+  background:
+    url("images/overlay.png"),
+    url("../../images/ich.JPG");
+  background-size: 256px 256px, cover;
+  background-attachment: fixed, fixed;
+  background-position: top left, center 40%;
+  background-repeat: repeat, no-repeat;
+}
+
+/* Harmonische Blautöne mit Tiefe */
+#one {
+  background: linear-gradient(180deg, #e8edf3 0%, #dbe3ec 100%);
+  color: #1a1a1a;
+}
+
+#new {
+  background: linear-gradient(180deg, #e3e8ef 0%, #cfd9e4 100%);
+  color: #1a1a1a;
+}
+
+#three {
+  background: linear-gradient(180deg, #dfe5ec 0%, #c6d2de 100%);
+  color: #1a1a1a;
+}
+
+#contact {
+  background: linear-gradient(180deg, #e7ecf2 0%, #d2dbe5 100%);
+  color: #1a1a1a;
+}
+
+/* Box neutral und lesbar halten */
+.content.box.style2 {
+  background: rgba(255, 255, 255, 0.9);
+  color: #1a1a1a;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* Mobile: Parallax abschalten */
+@media (max-width: 768px) {
+  #intro { background-attachment: scroll, scroll; }
+}
+
+#one, #new, #three, #contact {
+  background-blend-mode: soft-light;
+}
+
+.content.box.style2 {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 8px;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  max-width: 850px;
+  margin: 0 auto;
+}
 
 
 
