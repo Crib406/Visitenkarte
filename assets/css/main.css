@@ -2345,3 +2345,41 @@ ul li {
   text-align: left;
   margin-bottom: 0.5em; /* Optischer Abstand zwischen den Punkten */
 }
+
+/* Voll klickbare Bernstein-Fläche */
+.looking-note.highlight {
+  display: inline-block;
+  background: rgba(245, 179, 66, 0.9);   /* Bernstein */
+  padding: 0.9rem 1.6rem;
+  border-radius: 10px;
+  color: #111;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+  line-height: 1.5;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  letter-spacing: 0.3px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.looking-note.highlight small {
+  display: block;
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-top: 0.2rem;
+}
+
+/* Hover-Effekt: leichte Aufhellung + Tiefenwirkung */
+.looking-note.highlight:hover,
+.looking-note.highlight:focus {
+  background: rgba(245, 179, 66, 1);
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  text-decoration: none;
+  color: #000;
+}
+
+
+
