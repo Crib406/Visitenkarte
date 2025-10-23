@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="utf-8" />
-  <title>Impressum – Christoph B. Reimann</title>
+  <title>Impressum & Datenschutz – Christoph B. Reimann</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css?v=2504" />
   <style>
@@ -26,7 +26,7 @@
     }
 
     .box {
-      max-width: 700px;
+      max-width: 780px;
       background: rgba(0, 0, 0, 0.4);
       color: #fff;
       padding: 2.5rem;
@@ -34,14 +34,10 @@
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     }
 
-    .box h2 {
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
-    }
-
-    .box p {
-      line-height: 1.6;
-    }
+    .box h2 { margin-bottom: 1rem; font-size: 1.8rem; }
+    .box h3 { margin-top: 2rem; font-size: 1.35rem; }
+    .box h4 { margin-top: 1.5rem; font-size: 1.1rem; }
+    .box p, .box li, label { line-height: 1.6; }
 
     a {
       color: #f5b342;
@@ -49,10 +45,7 @@
       text-underline-offset: 3px;
       transition: opacity 0.2s ease;
     }
-
-    a:hover {
-      opacity: 0.8;
-    }
+    a:hover { opacity: 0.8; }
 
     /* Zurück-Link oben */
     .back-link {
@@ -66,11 +59,40 @@
       border-radius: 6px;
       transition: all 0.2s ease;
     }
+    .back-link:hover { background: #f5b342; color: #111; }
 
-    .back-link:hover {
-      background: #f5b342;
-      color: #111;
+    .muted { opacity: 0.85; font-size: 0.95rem; }
+    .small { font-size: 0.9rem; opacity: 0.9; }
+
+    /* Kontaktformular */
+    form.contact { margin-top: 1rem; display: grid; gap: 0.9rem; }
+    .row { display: grid; gap: 0.9rem; grid-template-columns: 1fr 1fr; }
+    input, textarea, button {
+      width: 100%;
+      padding: 0.7rem 0.8rem;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.25);
+      background: rgba(0,0,0,0.25);
+      color: #fff;
+      outline: none;
     }
+    textarea { min-height: 130px; resize: vertical; }
+    button {
+      cursor: pointer;
+      border: 2px solid #f5b342;
+      background: transparent;
+      font-weight: 600;
+      transition: all .2s ease;
+    }
+    button:hover { background: #f5b342; color: #111; }
+
+    .checkbox { display: flex; gap: .6rem; align-items: flex-start; }
+    .checkbox input { width: 1.1rem; height: 1.1rem; margin-top: .2rem; }
+
+    /* Honeypot: verstecken (kein Cookie, nur Bot-Filter) */
+    .hp { position: absolute; left: -99999px; }
+
+    @media (max-width: 680px){ .row { grid-template-columns: 1fr; } }
   </style>
 </head>
 
@@ -78,18 +100,107 @@
   <section class="main style3 secondary">
     <div class="content box">
       <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+
       <header>
-        <h2>Impressum</h2>
+        <h2>Impressum &amp; Datenschutz</h2>
       </header>
 
+      <!-- IMPRESSUM -->
+      <h3>Impressum</h3>
+      <p class="muted">Angaben gemäß <strong>§ 5 Digital­dienste­gesetz (DDG)</strong>.</p>
       <p>
-        Diese Website dient ausschließlich der persönlichen Darstellung im Rahmen einer privaten Jobsuche.<br><br>
-        <strong>Verantwortlich gemäß § 55 Abs. 2 RStV:</strong><br>
-        Christoph Bruno Reimann<br>
+        <strong>Christoph Bruno Reimann</strong><br>
+        38667 Bad Harzburg, Deutschland<br><br>
+        E-Mail: <a href="mailto:wbv@creimann.cc">wbv@creimann.cc</a><br>
         
-        Keine geschäftsmäßigen oder kommerziellen Inhalte.<br><br>
-        <span class="highlight-accent">© 2025 Christoph B. Reimann</span>
       </p>
+      <p class="small">Zweck der Website: persönliche Darstellung im Rahmen einer beruflichen Neuorientierung/Jobsuche.</p>
+      <p class="small">
+        <strong>Verantwortlich i.S.d. § 18 Abs. 2 MStV:</strong> entfällt (keine journalistisch-redaktionellen Inhalte).
+        Falls künftig vorhanden: Name/Anschrift hier ergänzen.
+      </p>
+      <p><span class="highlight-accent">© 2025 Christoph B. Reimann</span></p>
+
+      <!-- KONTAKT -->
+      <h3>Kontakt</h3>
+      <p class="muted">
+        Du erreichst mich per E-Mail oder über das Formular. Mit dem Absenden bestätigst du,
+        die <a href="#datenschutz">Datenschutzhinweise</a> zur Kenntnis genommen zu haben.
+      </p>
+
+      <!-- Direkte E-Mail (ohne Cookies) -->
+      <p class="small">
+        <em>Direkt per E-Mail:</em>
+        <a href="mailto:wbv@creimann.cc">wbv@creimann.cc</a>
+      </p>
+
+
+      <!-- DATENSCHUTZ -->
+      <h3 id="datenschutz">Datenschutzerklärung</h3>
+      <p class="muted">Informationen nach <strong>Art. 13 DSGVO</strong> zur Verarbeitung personenbezogener Daten.</p>
+
+      <h4>1. Verantwortlicher</h4>
+      <p>
+        Christoph Bruno Reimann, 38667 Bad Harzburg, Deutschland<br>
+        E-Mail: <a href="mailto:wbv@creimann.cc">wbv@creimann.cc</a>
+      </p>
+
+      <h4>2. Hosting (GitHub Pages)</h4>
+      <p>
+        Diese Website wird bei <strong>GitHub Pages</strong> gehostet (GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA).
+        Dabei werden Server-Logdaten (u. a. IP-Adresse, Datum/Uhrzeit, angeforderte URL, Referrer, User-Agent) verarbeitet,
+        um die Auslieferung der Website und die IT-Sicherheit zu gewährleisten.
+      </p>
+      <p class="small">
+        <em>Rechtsgrundlage:</em> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an technischer Bereitstellung/IT-Sicherheit).<br>
+        <em>Empfänger:</em> GitHub, Inc. (Hosting). Eine Drittlandübermittlung (USA) ist möglich; GitHub setzt hierfür u. a. Standardvertragsklauseln ein.
+      </p>
+
+      <h4>3. Kontakt (E-Mail & Formular)</h4>
+      <p>
+        Bei Kontakt per E-Mail oder über das Formular verarbeite ich die von dir angegebenen Daten
+        (z. B. Name, E-Mail, Nachricht) ausschließlich zur Bearbeitung der Anfrage.
+      </p>
+      <p class="small">
+        <em>Rechtsgrundlagen:</em> Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Kommunikation) oder lit. f DSGVO (berechtigtes Interesse an Kommunikation).<br>
+        <em>Speicherdauer:</em> Löschung nach Abschluss der Bearbeitung, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
+      </p>
+
+      <h4>4. Formulardienst (nur bei Nutzung externer Dienste)</h4>
+      <p class="small">
+        Sofern für das Formular ein externer Dienst genutzt wird (z. B. Formspree),
+        werden die Formularinhalte an diesen Anbieter übermittelt und dort zur Zustellung an mich verarbeitet.
+        <em>Rechtsgrundlage:</em> Art. 6 Abs. 1 lit. b DSGVO; <em>Empfänger/Drittland:</em> der jeweilige Anbieter (ggf. USA, mit geeigneten Garantien).
+        Details sind in der Datenschutzerklärung des Anbieters geregelt.
+      </p>
+
+      <h4>5. Cookies / Tracking</h4>
+      <p>
+        Es werden <strong>keine</strong> nicht erforderlichen Cookies, Tracking- oder Marketing-Tools eingesetzt.
+        Webfonts/Assets werden möglichst lokal eingebunden.
+      </p>
+
+      <h4>6. Pflicht zur Bereitstellung</h4>
+      <p class="small">
+        Die Übermittlung der im Formular als erforderlich gekennzeichneten Angaben ist notwendig, um deine Anfrage zu bearbeiten.
+      </p>
+
+      <h4>7. Deine Rechte</h4>
+      <p class="small">
+        Du hast Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit sowie Widerspruch (Art. 21 DSGVO),
+        und das Recht auf Beschwerde bei einer Aufsichtsbehörde.
+      </p>
+
+      <h4>8. Aktualität</h4>
+      <p class="small">Stand: 23.10.2025. Anpassungen werden hier veröffentlicht.</p>
+
+      <hr style="border-color: rgba(255,255,255,0.2); margin: 2rem 0;" />
+      <p class="small">
+        Hinweise: Bei rein privatem, nicht geschäftsmäßigem Betrieb könnte die Impressumspflicht entfallen.
+        Da diese Seite der beruflichen Darstellung dient, ist die Anbieterkennzeichnung nach § 5 DDG angegeben.
+      </p>
+
+      <p><span class="highlight-accent">© 2025 Christoph B. Reimann</span></p>
     </div>
   </section>
 </body>
