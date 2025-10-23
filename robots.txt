@@ -1,17 +1,4 @@
-User-agent: Googlebot
-Disallow: /
+User-agent: *
+Disallow: /impressum.html
 
-User-agent: Googlebot-Image
-Disallow: /
-
-User-agent: Googlebot-Video
-Disallow: /
-
-User-agent: Googlebot-News
-Disallow: /
-
-User-agent: AdsBot-Google
-Disallow: /
-
-User-agent: Mediapartners-Google
-Disallow: /
+Sitemap: https://creimann.cc/sitemap.xml
