@@ -2464,3 +2464,11 @@ ul li {
   #header h1 { height: 2.5em; line-height: 2.5em; }
   #header nav { display: block !important; height: 2.5em; line-height: 2.5em; }
 }
+
+
+/* Mobile: Intro-Content etwas tiefer setzen */
+@media (max-width: 768px) {
+  #intro .content {
+    transform: translateY(30px); /* verschiebt Inhalt leicht nach unten */
+  }
+}
