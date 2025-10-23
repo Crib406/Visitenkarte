@@ -2466,7 +2466,7 @@ ul li {
 }
 
 
-/* Mobile: Intro-Content etwas tiefer setzen */
+/* Mobile: Intro-Content etwas tiefer setzen, damit die Bilder zu sehen sind */
 @media (max-width: 768px) {
   #intro .content {
     transform: translateY(30px); /* verschiebt Inhalt leicht nach unten */
