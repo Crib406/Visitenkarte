@@ -2381,31 +2381,6 @@ ul li {
   color: #000;
 }
 
-/* H1 im Header exakt mittig (Desktop) */
-#header {
-  text-align: center; /* beeinflusst nichts außer inline-blocks */
-}
-#header h1 {
-  position: absolute !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  top: 0;
-  height: 3em;          /* wie der Header */
-  line-height: 3em;     /* vertikal mittig */
-  margin: 0;
-}
-
-/* Mobile-Header ist 2.5em hoch -> anpassen */
-@media screen and (max-width: 736px) {
-  #header h1 {
-    height: 2.5em;
-    line-height: 2.5em;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    position: absolute !important;
-  }
-}
-
 /* EIN Bild nur im Hero */
 #intro {
   background:
@@ -2462,6 +2437,30 @@ ul li {
   max-width: 850px;
   margin: 0 auto;
 }
+/* === HEADER MENU FIX === */
+#header nav {
+  position: absolute !important;
+  right: 0.5em !important;
+  top: 0;
+  height: 3em;
+  line-height: 3em;
+  display: block !important;    /* falls irgendwo display:none gesetzt wurde */
+  z-index: 10001;               /* über dem h1 */
+}
 
+#header h1 {
+  position: absolute !important;
+  left: 1em !important;
+  top: 0;
+  height: 3em;
+  line-height: 3em;
+  transform: none !important;
+  z-index: 10000;
+}
 
-
+/* Mobile: Menü NICHT ausblenden */
+@media screen and (max-width: 736px) {
+  #header { height: 2.5em; line-height: 2.5em; }
+  #header h1 { height: 2.5em; line-height: 2.5em; }
+  #header nav { display: block !important; height: 2.5em; line-height: 2.5em; }
+}
