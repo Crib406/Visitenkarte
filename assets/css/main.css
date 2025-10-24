@@ -2381,16 +2381,6 @@ ul li {
   color: #000;
 }
 
-/* EIN Bild nur im Hero */
-#intro {
-  background:
-    url("images/overlay.png"),
-    url("../../images/mobile.JPG");
-  background-size: 256px 256px, cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, center 40%;
-  background-repeat: repeat, no-repeat;
-}
 
 /* Harmonische Blautöne mit Tiefe */
 #one {
@@ -2499,5 +2489,41 @@ ul li {
     left: 1rem;
     bottom: 1rem;
     padding: .35rem .6rem;
+  }
+}
+
+
+/* =========================================
+   Intro-Hintergrundbilder (Hero Section)
+   ========================================= */
+
+/* Standard: Mobile (bis iPad hochkant) */
+#intro {
+  background:
+    url("images/overlay.png"),
+    url("../../images/hero_mobile.jpg");
+  background-size: 256px 256px, cover;
+  background-attachment: fixed, fixed;
+  background-position: top left, center 40%;
+  background-repeat: repeat, no-repeat;
+}
+
+/* Ab iPad quer und Desktop */
+@media (min-width: 992px) {
+  #intro {
+    background:
+      url("/images/overlay.png"),
+      url("../../images/hero_desktop.jpg");
+    background-size: 256px 256px, cover;
+    background-attachment: fixed, fixed;
+    background-position: top left, center 45%;
+    background-repeat: repeat, no-repeat;
+  }
+}
+
+/* Optional: Parallax auf Mobilgeräten abschalten */
+@media (max-width: 768px) {
+  #intro {
+    background-attachment: scroll, scroll;
   }
 }
