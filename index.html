@@ -307,7 +307,7 @@ layout: null
 <div class="section-centered">
   <p class="lead">
     Warum ich offen für Neues bin, beschreibe ich in meinem LinkedIn-Artikel – 
-    oder wir sprechen direkt. Ich freue mich auf den Austausch.
+    oder wir sprechen direkt. <strong> Ich freue mich über jeden Austausch</strong>.
   </p>
 
   <div class="cta-group">
@@ -315,41 +315,50 @@ layout: null
     <a href="https://www.linkedin.com/in/christoph-b-reimann-192328227/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
       LinkedIn-Artikel lesen →
     </a>
-  </div>
-</div>
+
+	</div>
+	</div>
+	</header>		
+
+	<div class="box">
+	<form action="https://formspree.io/f/mkgqloql" method="POST">
+		<div class="fields">
+		<div class="field half">
+			<input type="text" name="name" placeholder="Name" required>
+		</div>
+
+		<div class="field half">
+			<input type="email" name="email" placeholder="E-Mail" required>
+		</div>
+
+		<div class="field">
+			<textarea name="message" placeholder="Nachricht" rows="6" required></textarea>
+		</div>
+		</div>
+
+		<!-- Optionen / Anti-Spam / Anzeige -->
+		<input type="hidden" name="_subject" value="Neue Nachricht über die Website">
+		<input type="hidden" name="_template" value="table">
+		<input type="hidden" name="_language" value="de">
+
+		<!-- Honeypot -->
+		<input type="text" name="_honey" style="display:none">
+
+		<!-- Optional: Weiterleitung nach dem Absenden -->
+		<!-- <input type="hidden" name="_next" value="https://deine-domain.de/danke.html"> -->
+
+		<ul class="actions special">
+		<li><input type="submit" value="Nachricht senden"></li>
+		</ul>
+	</form>
+	</div>
 
 
 
 
-</header>					<div class="box">
-					<form action="https://formspree.io/f/mkgqloql" method="POST">
-						<div class="fields">
-						<div class="field half">
-							<input type="text" name="name" placeholder="Name" required>
-						</div>
-						<div class="field half">
-							<input type="email" name="email" placeholder="E-Mail" required>
-						</div>
-						<div class="field">
-							<textarea name="message" placeholder="Nachricht" rows="6" required></textarea>
-						</div>
-						</div>
 
-						<!-- Optionen / Anti-Spam / Anzeige -->
-						<input type="hidden" name="_subject" value="Neue Nachricht über die Website">
-						<input type="hidden" name="_template" value="table">
-						<input type="hidden" name="_language" value="de">
-						<input type="text" name="_honey" style="display:none"> <!-- Honeypot -->
 
-						<!-- Optional: nach dem Absenden weiterleiten -->
-						<!-- <input type="hidden" name="_next" value="https://deine-domain.de/danke.html"> -->
-
-						<ul class="actions special">
-						<li><input type="submit" value="Nachricht senden"></li>
-						</ul>
-					</form>
-					</div>
-				</div>
+			
 			
 			</section>
 
