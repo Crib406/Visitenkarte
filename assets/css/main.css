@@ -2561,3 +2561,21 @@ blockquote small {
   clip: rect(0,0,0,0);
   border: 0;
 }
+
+.section-centered{ text-align:center; max-width:48rem; margin:0 auto; }
+.lead{ font-size:1.3rem; line-height:1.85; color:#333; margin-bottom:1.8rem; }
+.cta-group{ display:inline-flex; gap:.9rem; flex-wrap:wrap; justify-content:center; }
+
+.btn{
+  display:inline-block; padding:.78rem 1.5rem; border-radius:6px;
+  text-decoration:none; font-weight:600; font-size:1rem;
+  transition:background-color .2s ease, transform .02s ease;
+  border:1px solid #0077b5; background:#0077b5; color:#fff;
+}
+.btn:hover,.btn:focus{ background:#005c8f; }
+.btn:active{ transform:translateY(1px); }
+
+/* Mobile: bessere Tap-Ziele */
+@media (max-width: 480px){
+  .btn{ width:100%; text-align:center; }
+}
