@@ -2457,6 +2457,7 @@ ul li {
   z-index: 10000;
 }
 
+
 /* Mobile: Menü NICHT ausblenden */
 @media screen and (max-width: 736px) {
   #header { height: 2.5em; line-height: 2.5em; }
@@ -2464,11 +2465,15 @@ ul li {
   #header nav { display: block !important; height: 2.5em; line-height: 2.5em; }
 }
 
+/* === Desktop-Standard: nur vertikal leicht nach unten === */
+#intro .content {
+  transform: translateY(35px);
+}
 
 /* Mobile: Intro-Content etwas tiefer setzen, damit die Bilder zu sehen sind */
 @media (max-width: 768px) {
   #intro .content {
-    transform: translateY(70px); /* verschiebt Inhalt leicht nach unten */
+    transform: translateY(60px); /* verschiebt Inhalt leicht nach unten */
   }
 }
 /* Referenzfläche */
