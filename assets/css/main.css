@@ -2468,7 +2468,7 @@ ul li {
 /* Mobile: Intro-Content etwas tiefer setzen, damit die Bilder zu sehen sind */
 @media (max-width: 768px) {
   #intro .content {
-    transform: translateY(30px); /* verschiebt Inhalt leicht nach unten */
+    transform: translateY(70px); /* verschiebt Inhalt leicht nach unten */
   }
 }
 /* Referenzfläche */
